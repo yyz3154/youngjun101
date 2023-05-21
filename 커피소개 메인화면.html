@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>'About COFFEE'</title>
+<style type="text/css">html{height:100%;}
+body {background:url(커피.jpg) no-repeat; background-size:100% 100%}
+	* {
+		margin: 0;
+                        padding: 0;
+		   /* margin과 padding 값을 0으로 설정. 이는 HTML 문서의 초기화를 위해 사용됩니다.*/
+	}
+	ul li{
+		list-style: none;/*none을 쓰며 디자인 자유성이 높아짐*/
+	}
+	a {
+		text-decoration: none; /*텍스트의 장식을 지정하는데, 이 부분에서는 none 값으로 설정하여 밑줄이 없어짐.*/
+		color:#333; /*회색 계열의 검은색 글자*/
+	}
+
+	#menu { /* #menu id를 가진 요소에 대한 스타일을 정의*/
+		font:bold 20px "malgun gothic"; /* bold 값으로 설정, 굵은 글씨로 표시, 20px로 크기 "malgun gothic" 글꼴을 사용하도록 지정*/
+		/*각각 요소의 너비 */
+		height:50px;/*각각 요소의 높이*/
+	
+		color:black; 
+		line-height: 30px;  /*텍스트 줄간의 간격*/ 
+		margin:0 auto; /*margin 속성은 요소의 바깥쪽 여백을 지정하는데, 여기서는 0 auto로 지정. 이는 위아래 여백은 없고, 좌우 여백은 자동으로 지정하여 요소를 수평 중앙에 배치*/
+		text-align: center; /*텍스트는 가운데 정렬*/
+                        left: auto;
+	}
+
+	#menu > ul > li { /*#menu 아래의 직계 자식(>) 중 ul 태그의 직계 자식 중 li 태그에 대한 스타일을 정의*/
+		float:left; 
+		width:140px; /*해당요소 너비 조정*/
+		position:relative; /*position: relative는 해당 요소를 일반적인 문서 흐름에서 배치하되, top, bottom, left, right 속성을 사용하여 위치를 조정할 수 있는 CSS 속성*/
+	} 
+	#menu > ul > li > ul { /*아래의 직계 자식(>) 중 ul 태그의 직계 자식 중 li 태그의 자식인 ul 태그에 대한 스타일을 정의하는 부분입니다.*/
+		width:130px;
+		display:none;
+		position: absolute; /*position 태그를 사용해서 absolute로 지정함. 이는 해당 요소를 문서 상에서 절대적인 위치에 배치하도록 합니다.*/
+		font-size:14px;
+		
+	}
+	#menu > ul > li:hover > ul {     /*hover 선택자는 마우스 커서를 해당 요소 위로 올렸을 때 적용되는 스타일을 정의합니다. (드롭다운 기능)*/
+		display:block; /*display 속성은 해당 요소의 표시 여부를 결정함 여기선 block으로 지정함. 즉, 해당 요소가 보이게 됩니다. 이러면 해당 li 태그가 호버되면, 해당 li 태그의 자식인 ul 태그가 보이게 된다.*/
+		
+	}
+	#menu > ul > li > ul > li:hover {
+		background: white;
+		transition: ease 1s;  /*  1초동안 타일변화하는 동안에 부드럽게 움직이는 효과를 줍니다.*/
+		}
+
+}
+	</style>
+</head>     
+      
+<a href ="커피소개 메인화면.html" target="_self"><img src="메인으로 돌아가기.jpg" title="메인으로 돌아가기" width="70" height="70" ></a>  
+<audio src="인프음악.mp3" controls autoplay></audio></a>
+
+<div id="menu">
+	
+<ul>
+		<li><a href="유영준 과제.htm" title="인기 카페">카페 브랜드</a>
+			<ul>
+				<li><a href="https://www.starbucks.co.kr/index.do">스타벅스</a></li>
+				<li><a href="https://www.twosome.co.kr/mn/dessertStory.do">투썸플레이스</a></li>
+				<li><a href="https://www.ediya.com/">이디야</a></li>
+                                                <li><a href="https://www.mega-mgccoffee.com/">메가커피</a></li>
+			</ul>
+		</li>
+		<li><a href="메뉴나열.htm" title="카페별 인기메뉴">커피 메뉴 </a>
+			<ul>
+				<li><a href="https://terms.naver.com/entry.naver?docId=962394&cid=48170&categoryId=48227">아메리카노</a></li>
+				<li><a href="https://terms.naver.com/entry.naver?docId=962396&cid=48170&categoryId=48227">카페라떼</a></li>
+				<li><a href="https://terms.naver.com/entry.naver?docId=1233477&cid=40942&categoryId=32127">카푸치노</a></li>
+			</ul>
+		</li>
+		<li><a href="원두소개.htm">원두 소개</a>
+			<ul>
+				<li><a href="http://baristarules.maeil.com/blog/2352/" title="바리스타ruels블로그">에티오피아</a></li>
+				<li><a href="https://purplebeancoffee.tistory.com/12"title="퍼플빈커피 블로그">케냐</a></li>
+				<li><a href="https://purplebeancoffee.tistory.com/16"title="퍼플빈커피 블로그">탄자니아</a></li>
+			</ul>
+		</li>
+		
+		
+	</ul>
+
+<br><br><br><br><br>
+<h1><font size=15px>'About COFFEE!'</font></h1>
+</div>
+</body>
+
+</html>
